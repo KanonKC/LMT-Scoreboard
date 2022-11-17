@@ -1,15 +1,17 @@
 import React from "react";
 import { Card, Col, Row } from "reactstrap";
 
-const ScoreCard = ({ ...args }) => {
+const ScoreCard = ({ team,score,order,color }) => {
     return (
-        <Card className="py-3 px-4">
+        <Card className="py-3 px-4" style={{
+            backgroundColor: color
+        }}>
             <Row>
                 <Col>
-                    <h1>{args.team}</h1>
+                    <h1 >{order}. {team}</h1>
                 </Col>
                 <Col>
-                    <h1 className="text-right">{args.score}</h1>
+                    <h1 className="text-right">{score}</h1>
                 </Col>
             </Row>
         </Card>
