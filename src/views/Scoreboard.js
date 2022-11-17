@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import ScoreCard from "../components/ScoreCard";
 import { getScores } from "../services/score.service";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import { Col, Row } from "reactstrap";
 
 const Scoreboard = () => {
     const [scores, setscores] = useState([]);
