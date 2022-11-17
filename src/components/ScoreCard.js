@@ -21,16 +21,16 @@ const ScoreCard = ({ team,score,order,color }) => {
             backgroundColor: color
         }}>
             <Row>
-                <Col xs={1}>
+                <Col xl={1}>
                     <h1 className="font-mono">{order}<sup>{orderSymbol}</sup></h1>
                 </Col>
-                <Col xs={1}>
-                    {medalIcon && <img width={50} src={require(`../imgs/${medalIcon}-medal.svg`)} alt=""/>}
+                <Col xl={1}>
+                    {medalIcon && <img className="mt-1" width={50} src={require(`../imgs/${medalIcon}-medal.svg`)} alt=""/>}
                 </Col>
-                <Col>
+                <Col xl={9}>
                     <h1>{team}</h1>
                 </Col>
-                <Col>
+                <Col xl={1}>
                     <h1 className="text-right">{score}</h1>
                 </Col>
             </Row>
