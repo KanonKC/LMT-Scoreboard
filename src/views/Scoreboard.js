@@ -22,7 +22,7 @@ const Scoreboard = () => {
 
     return (
         <div>
-            <h1 className="text-center my-10 text-6xl">SCOREBOARD </h1>
+            <h1 className="text-center text-white mt-20 mb-10 text-6xl">SCOREBOARD </h1>
 
             <div className="my-10 countdown-timer d-none">
                 <CountdownCircleTimer
