@@ -77,30 +77,6 @@ const ScoreCard = ({ team, score, order, color }) => {
                     )}
                     <h1 className="text-center">{team}</h1>
                     <h1 className="text-center">{score}</h1>
-                    {/* <Row>
-                    <Col xl={1}>
-                        <h1 className="font-mono">
-                            {order}
-                            <sup>{orderSymbol}</sup>
-                        </h1>
-                    </Col>
-                    <Col xl={1}>
-                        {medalIcon && (
-                            <img
-                                className="mt-1"
-                                width={50}
-                                src={require(`../imgs/${medalIcon}-medal.svg`)}
-                                alt=""
-                            />
-                        )}
-                    </Col>
-                    <Col xl={9}>
-                        <h1>{team}</h1>
-                    </Col>
-                    <Col xl={1}>
-                        <h1 className="xl:text-right">{score}</h1>
-                    </Col>
-                </Row> */}
                 </Card>
             </div>
         </div>
