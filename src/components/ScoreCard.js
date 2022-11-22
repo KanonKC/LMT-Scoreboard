@@ -32,7 +32,7 @@ const ScoreCard = ({ team, score, order, color }) => {
                 >
                     <Row>
                         <Col xl={1}>
-                            <h1 className="font-mono">
+                            <h1 className="font-mono lg:pt-2 sm:text-4xl lg:text-3xl">
                                 {order}
                                 <sup>{orderSymbol}</sup>
                             </h1>
@@ -47,10 +47,10 @@ const ScoreCard = ({ team, score, order, color }) => {
                                 />
                             )}
                         </Col>
-                        <Col xl={9}>
+                        <Col xl={8}>
                             <h1>{team}</h1>
                         </Col>
-                        <Col xl={1}>
+                        <Col xl={2}>
                             <h1 className="xl:text-right">{score}</h1>
                         </Col>
                     </Row>
