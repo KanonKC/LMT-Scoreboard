@@ -22,7 +22,7 @@ const ScoreCard = ({ team, score, order, color }) => {
     }, [color]);
 
     return (
-        <div>
+        <div className="scorecard-text">
             <div className="hidden xl:block">
                 <Card
                     className="py-3 px-4 "
@@ -32,7 +32,7 @@ const ScoreCard = ({ team, score, order, color }) => {
                 >
                     <Row>
                         <Col xl={1}>
-                            <h1 className="font-mono lg:pt-2 sm:text-4xl lg:text-3xl">
+                            <h1 className="font-mono lg:pt-2 scorecard-order">
                                 {order}
                                 <sup>{orderSymbol}</sup>
                             </h1>
@@ -48,10 +48,10 @@ const ScoreCard = ({ team, score, order, color }) => {
                             )}
                         </Col>
                         <Col xl={8}>
-                            <h1>{team}</h1>
+                            <h1 className="scorecard-text">{team}</h1>
                         </Col>
                         <Col xl={2}>
-                            <h1 className="xl:text-right">{score}</h1>
+                            <h1 className="xl:text-right scorecard-text">{score}</h1>
                         </Col>
                     </Row>
                 </Card>
@@ -63,7 +63,7 @@ const ScoreCard = ({ team, score, order, color }) => {
                         backgroundColor: `rgba(${rgb.r},${rgb.g},${rgb.b},0.8)`,
                     }}
                 >
-                    <h1 className="font-mono text-center">
+                    <h1 className="font-mono score-order text-center">
                         {order}
                         <sup>{orderSymbol}</sup>
                     </h1>
@@ -75,8 +75,8 @@ const ScoreCard = ({ team, score, order, color }) => {
                             alt=""
                         />
                     )}
-                    <h1 className="text-center">{team}</h1>
-                    <h1 className="text-center">{score}</h1>
+                    <h1 className="scorecard-text text-center">{team}</h1>
+                    <h1 className="scorecard-text text-center">{score}</h1>
                 </Card>
             </div>
         </div>

@@ -6,6 +6,18 @@ body {
     background-image: url('./imgs/background.png');
 }
 
+.scoreboard-title {
+    font-weight: bold !important;
+}
+
+.scorecard-text {
+    font-size: 36px !important;
+}
+
+.scorecard-order {
+    font-size: 30px !important;
+}
+
 .card-list {
     margin: 0 18%;
     margin-bottom: 20px;
