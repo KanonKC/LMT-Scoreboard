@@ -12,6 +12,7 @@ body {
 
 .scorecard-text {
     font-size: 36px !important;
+    font-weight: bold !important;
 }
 
 .scorecard-order {
