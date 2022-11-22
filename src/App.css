@@ -8,6 +8,7 @@ body {
 
 .card-list {
     margin: 0 18%;
+    margin-bottom: 20px;
 }
 
 .countdown-timer {
