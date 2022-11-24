@@ -41,7 +41,7 @@ const ScoreCard = ({ team, score, order, color,customClass }) => {
                             {medalIcon && (
                                 <img
                                     className="mt-1"
-                                    width={50}
+                                    width={40}
                                     src={require(`../imgs/${medalIcon}-medal.svg`)}
                                     alt=""
                                 />
