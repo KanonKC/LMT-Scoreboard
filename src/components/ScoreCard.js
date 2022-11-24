@@ -5,7 +5,7 @@ import { hexToRgb } from "../modules/color.module";
 const ORDER = ["st", "nd", "rd"];
 const MEDAL = ["gold", "silver", "bronze"];
 
-const ScoreCard = ({ team, score, order, color }) => {
+const ScoreCard = ({ team, score, order, color,customClass }) => {
     const [rgb, setrgb] = useState({ r: 0, g: 0, b: 0 });
     const [orderSymbol, setorderSymbol] = useState("th");
     const [medalIcon, setmedalIcon] = useState(null);
@@ -22,7 +22,7 @@ const ScoreCard = ({ team, score, order, color }) => {
     }, [color]);
 
     return (
-        <div className="scorecard-text">
+        <div className={customClass + " scorecard-text"}>
             <div className="hidden xl:block">
                 <Card
                     className="py-3 px-4 "
