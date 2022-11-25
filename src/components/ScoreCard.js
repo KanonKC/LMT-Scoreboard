@@ -38,14 +38,14 @@ const ScoreCard = ({ team, score, order, color,customClass }) => {
                             </h1>
                         </Col>
                         <Col xl={1}>
-                            {medalIcon && (
+                            {/* {medalIcon && (
                                 <img
                                     className="mt-1"
                                     width={40}
                                     src={require(`../imgs/${medalIcon}-medal.svg`)}
                                     alt=""
                                 />
-                            )}
+                            )} */}
                         </Col>
                         <Col xl={8}>
                             <h1 className="scorecard-text">{team}</h1>
@@ -67,14 +67,14 @@ const ScoreCard = ({ team, score, order, color,customClass }) => {
                         {order}
                         {/* <sup>{orderSymbol}</sup> */}
                     </h1>
-                    {medalIcon && (
+                    {/* {medalIcon && (
                         <img
                             className="mt-1 mx-auto"
                             width={50}
                             src={require(`../imgs/${medalIcon}-medal.svg`)}
                             alt=""
                         />
-                    )}
+                    )} */}
                     <h1 className="scorecard-text text-center">{team}</h1>
                     <h1 className="scorecard-text text-center">{score}</h1>
                 </Card>
