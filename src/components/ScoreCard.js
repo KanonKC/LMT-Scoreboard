@@ -34,7 +34,7 @@ const ScoreCard = ({ team, score, order, color,customClass }) => {
                         <Col xl={1}>
                             <h1 className="font-mono lg:pt-2 scorecard-order">
                                 {order}
-                                <sup>{orderSymbol}</sup>
+                                {/* <sup>{orderSymbol}</sup> */}
                             </h1>
                         </Col>
                         <Col xl={1}>
@@ -65,7 +65,7 @@ const ScoreCard = ({ team, score, order, color,customClass }) => {
                 >
                     <h1 className="font-mono score-order text-center">
                         {order}
-                        <sup>{orderSymbol}</sup>
+                        {/* <sup>{orderSymbol}</sup> */}
                     </h1>
                     {medalIcon && (
                         <img
