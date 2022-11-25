@@ -2,20 +2,19 @@ import React, { useEffect, useState } from "react";
 import { Card, Col, Row } from "reactstrap";
 import { hexToRgb } from "../modules/color.module";
 
-const ORDER = ["st", "nd", "rd"];
-const MEDAL = ["gold", "silver", "bronze"];
+// const ORDER = ["st", "nd", "rd"];
+// const MEDAL = ["gold", "silver", "bronze"];
 
 const ScoreCard = ({ team, score, order, color,customClass }) => {
+    
     const [rgb, setrgb] = useState({ r: 0, g: 0, b: 0 });
-    const [orderSymbol, setorderSymbol] = useState("th");
-    const [medalIcon, setmedalIcon] = useState(null);
 
-    useEffect(() => {
-        if (order < 4) {
-            setmedalIcon(MEDAL[order - 1]);
-            setorderSymbol(ORDER[order - 1]);
-        }
-    }, [order]);
+    // useEffect(() => {
+    //     if (order < 4) {
+    //         setmedalIcon(MEDAL[order - 1]);
+    //         setorderSymbol(ORDER[order - 1]);
+    //     }
+    // }, [order]);
 
     useEffect(() => {
         setrgb(hexToRgb(color));

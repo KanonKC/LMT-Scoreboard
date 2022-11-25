@@ -3,14 +3,11 @@ import ScoreCard from "../components/ScoreCard";
 import { getScores } from "../services/score.service";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import LoadingSpinner from "../components/LoadingSpinner";
-import { useNavigate } from "react-router-dom";
 
 const Scoreboard = () => {
     const [scores, setscores] = useState([]);
     const [key, setKey] = useState(0);
     const [isLoading, setisLoading] = useState(true)
-
-    const nevigate = useNavigate()
 
     const handleComplete = (prevKey) => {
         setKey((prevKey) => prevKey + 1);
